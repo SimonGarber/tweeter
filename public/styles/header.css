@@ -1,0 +1,18 @@
+header {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    top: 120px;
+    background-color: #8fd9d5;
+    background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+
+}
+#avatar {
+    display: block;
+    margin: auto;
+   
+
+}
+div h2 {
+    text-align: center    
+}

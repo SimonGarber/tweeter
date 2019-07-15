@@ -6,9 +6,13 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,700&display=swap" rel="stylesheet">
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
@@ -22,11 +26,40 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
+      <span id="newTweet">Write a new Tweet</span>
     </nav>
+    <header> 
+        <div>
+            <img id="avatar" src="/images/profile-hex.png"> 
+        </div>
+        <br>
+        <div>
+            <h2>@TweetMaster</h2>
+        </div>
+    </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p>  
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> -->
+      <section class="new-tweet">
+          <h2>Compose Tweet</h2>
+          <form action="/tweets" method="POST">
+            <textarea class="new-tweet" name="text" placeholder="What are you humming about?"></textarea>
+            <input type="submit" value="Tweet">
+            <span class="counter">140</span>
+          </form>
+        </section>
     </main>
+            
 
   </body>
 </html>
