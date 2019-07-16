@@ -29,6 +29,13 @@ main.container {
   position: relative;
   top: 140px;
   width:90%;
-  padding-left: 5.7em;
+  padding-left: 3em;
   
+}
+
+#newTweet {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-style: bold;
+  color: #f4f1ec;
 }

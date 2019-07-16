@@ -1,0 +1,36 @@
+.tweet {
+    position: relative;
+    width: 90%;
+    padding: 1rem;
+    border-color: transparent;
+    border-radius: 7px;
+    background-color: #EEE;
+    box-sizing: content-box;
+    box-shadow: 2px 4px 10px #AAA;
+    margin-top: 1em;
+    margin-left: 1rem;
+    margin-right: 6rem;
+}
+
+.tweet h3 {
+    display: inline-block;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    margin-top: 2em;
+    position: relative;
+    top: -1em;
+    margin: 0;
+}
+
+.tweet p {
+    height: 5rem;
+    background-color:#FFFFFF;
+}
+.tweet h4 {
+    margin-top: 0;
+    float: right;
+}
+.tweet .user_avatar {
+ height: 4rem;
+ width: 4rem;
+}

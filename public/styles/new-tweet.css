@@ -1,10 +1,18 @@
 .new-tweet {
-    padding: 1rem;
+    /* align-items: stretch;  */
+     display: block; 
+     /* flex-direction:  column; */
+    position: relative;
+    width:85%;
+     box-sizing: content-box;
+    padding: 2rem;
     border-radius: 7px;
-    border: solid black;
+    border-color: transparent;
+    border-style: none;
     box-shadow: 2px 4px 10px #AAA;
     background-color: #eee;
-    margin: 0 3em;
+    margin: 0 0.5em;
+    
     
 }
 .new-tweet h2 {
@@ -12,11 +20,30 @@
     margin-top: 0;
 }
 
-.new-tweet textarea {
-    width: 80%;
-    height: 3.3 rem;
+.new-tweet textarea { 
+    resize:none; 
+    position: relative;
+    width: 85%;
+    height: 3.7rem;
+     box-sizing: content-box;   
+    padding-right: none;
+    padding-left: none;
 }
 
 .new-tweet .counter {
     float: right;
+    font-family: 'Bungee', cursive;
+    color: #393A3C;
+    /* margin-right: 1em; */
+    
+}
+#tweetButton {
+    font-family: 'Bungee', cursive;
+    color: #ffff;
+    box-shadow: 2px 4px 10px #AAA;
+    margin-top: 1em;
+   
+}
+ .new-tweet .redcounter {
+    color: red;
 }

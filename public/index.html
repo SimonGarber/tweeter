@@ -7,18 +7,28 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,700&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-
+    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
+    <!-- character-counter Js -->
+    
     <!-- External JS -->
-    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
-
+    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
     <!-- App JS -->
-    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>   
   </head>
 
   <body>
@@ -34,31 +44,35 @@
         </div>
         <br>
         <div>
-            <h2>@TweetMaster</h2>
+            <h2 id="user_id"> @TweetMaster</h2>
         </div>
     </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p>  
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem totam blanditiis molestias, dolore nihil quo ducimus, assumenda perferendis vitae explicabo tempora? Voluptatem soluta voluptate minus alias perferendis dignissimos cumque!</p> -->
+      
       <section class="new-tweet">
-          <h2>Compose Tweet</h2>
-          <form action="/tweets" method="POST">
-            <textarea class="new-tweet" name="text" placeholder="What are you humming about?"></textarea>
-            <input type="submit" value="Tweet">
-            <span class="counter">140</span>
-          </form>
+          <!-- <h2>Compose Tweet</h2> -->
+        
+        <form action="/tweets" method="POST">
+          <textarea class="new-tweet" name="text" placeholder="What are you humming about?"></textarea>
+          <button id="tweetButton" type="submit" class="btn btn-primary btn-lg active">Tweet</button>
+          <span class="counter">140</span>
+        </form>
+      </section>
+      <section class="tweets">
+        
         </section>
+        
+          
+          
+              
+         
+
+          
+        
     </main>
+            
             
 
   </body>
