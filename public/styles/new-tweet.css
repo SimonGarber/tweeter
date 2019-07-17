@@ -1,7 +1,5 @@
 .new-tweet {
-    /* align-items: stretch;  */
      display: block; 
-     /* flex-direction:  column; */
     position: relative;
     width:85%;
      box-sizing: content-box;
@@ -28,13 +26,14 @@
      box-sizing: content-box;   
     padding-right: none;
     padding-left: none;
+    color: #393A3C;
 }
 
 .new-tweet .counter {
     float: right;
     font-family: 'Bungee', cursive;
     color: #393A3C;
-    /* margin-right: 1em; */
+    
     
 }
 #tweetButton {
@@ -46,4 +45,9 @@
 }
  .new-tweet .redcounter {
     color: red;
+}
+
+.flexNew {
+    display: flex;
+    justify-content: space-between;
 }

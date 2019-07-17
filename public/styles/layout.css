@@ -29,6 +29,7 @@ main.container {
   position: relative;
   top: 140px;
   width:90%;
+  margin:auto;
   padding-left: 3em;
   
 }
