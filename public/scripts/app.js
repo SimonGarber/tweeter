@@ -6,7 +6,9 @@ const createTweetElement = function(tweet) {
     $tweet.append($('<h4>').text(tweet.user.handle))
     $tweet.append($('<h3>').text(tweet.user.name))
     $tweet.append($('<p>').text( tweet.content.text))
-    $tweet.append($('<span>').addClass('date_created').text(tweet.created_at))
+
+    $tweet.append($('<div>').addClass('date_created').text(tweet.created_at))
+    $tweet.find('.date_created').append($('<span id="icons"><i class="fas fa-retweet"></i><i class="fas fa-flag"></i><i class="fas fa-heart"></i></span>'));
     return $tweet
   }
     
