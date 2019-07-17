@@ -1,8 +1,4 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
+
 
 const createTweetElement = function(tweet) {
     let $tweet = $('<article>').addClass(`tweet`)
@@ -32,43 +28,42 @@ function loadTweets() {
 }
     
 $(document).ready(function() {
-    console.log("Document is ready");
+  console.log("Document is ready");
+    $('#arrow-btn').click(function() {
+    $('.new-tweet').slideToggle();
+  });
 
-    $('#arrow-btn').click(function()
-{
+  $("#submit_tweet").on("submit",(function(event) {
+      $('#error').slideUp();
+      event.preventDefault();
+      console.log("Default event prevented")
+      const charCount = $(this).find("textarea")[0].value.length
+if (charCount === 0){
+  $('#error').html("You need letters and words in order to tweet!").slideDown();
+  } else if
+  (charCount > 140){
+    $('#error').html("Too many letters and words!").slideDown();
+  } else {  
+
+    $.ajax({
+          url:'/tweets',
+          method:'POST',
+          data: $(this).serialize(), 
+          success: () => {
+            $('.new-tweet').val('');
+            
+            $('.counter').text('140');
+            loadTweets();  
+          }    
+        });
+      }
+    }));
+    loadTweets();        
+  });
   
-    //  $('.tweets').focus();
-     $('.new-tweet').slideToggle();
-    // $('.tweets').focus();
-    // $('.new-tweet').focus();
-});
-    $("#submit_tweet").on("submit",(function(event) {
+  
 
-        event.preventDefault();
-        console.log("Default event prevented")
-        const charCount = $(this).find("textarea")[0].value.length
-  if (charCount === 0){
-    alert("You need letters and words in order to tweet!");
-    } else if
-    (charCount > 140){
-      alert("Too many letters and words!");
-    } else {  
       
-      $.ajax({
-            url:'/tweets',
-            method:'POST',
-            data: $(this).serialize(), 
-            success: () => {
-              $('.new-tweet').val('');
-              $('.counter').text('140');
-              console.log("Success!")
-              loadTweets();  
-            }    
-          });
-        }
-      }));
-      loadTweets();        
-    });
     
     
     

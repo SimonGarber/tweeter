@@ -58,7 +58,9 @@
     color: red;
 }
 
-/* .flexNew {
-    display: flex;
-    justify-content: space-between;
-} */
+#error {
+    display:none;
+    font-family: 'Bungee', cursive;
+    color: red;
+    
+}
