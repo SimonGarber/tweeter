@@ -47,22 +47,25 @@
             <h2 id="user_id"> @TweetMaster</h2>
         </div>
     </header>
-
     <!-- Page-specific (main) content here -->
     <main class="container">
-      
       <section class="new-tweet">
           <!-- <h2>Compose Tweet</h2> -->
-        
-        <form action="/tweets" method="POST">
-          <textarea class="new-tweet" name="text" placeholder="What are you humming about?"></textarea>
-          <button id="tweetButton" type="submit" class="btn btn-primary btn-lg active">Tweet</button>
-          <span class="counter">140</span>
-        </form>
-      </section>
-      <section class="tweets">
-        
+          <form id="submit_tweet"> 
+            <textarea class="new-tweet" name="text" placeholder="What are you humming about?"></textarea>
+            <button id="tweetButton" type="submit" class="btn btn-primary btn-lg active">Tweet</button>
+            <span class="counter">140</span>
+          </form>
         </section>
+        <section class="tweets">
+        </section>
+      </main>
+    </body>
+  </html>
+
+      
+        
+        
         
           
           
@@ -71,9 +74,6 @@
 
           
         
-    </main>
             
             
 
-  </body>
-</html>

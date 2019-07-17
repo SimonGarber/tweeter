@@ -5,6 +5,7 @@
  */
 
 
+
 const tweets = [
     {
       "user": {
@@ -29,29 +30,40 @@ const tweets = [
       "created_at": 1461113959088
     }
   ]
-  
+
+  const renderTweets = function(tweets) {
+   for( let i in tweets) {
+    $('.tweets').append(createTweetElement(tweets[i]))
+   } 
+}
 
 const createTweetElement = function(tweetData) {
  let $tweet = $('<article>').addClass(`tweet`)
  $tweet.append($('<img>').attr(`src`,tweetData.user.avatars))
+ $tweet.append($('<h4>').text(tweetData.user.name))
  $tweet.append($('<h3>').text(tweetData.user.handle))
  $tweet.append($('<p>').text( tweetData.content.text))
- $tweet.append($('<h4>').text(tweetData.user.name))
  $tweet.append($('<span>').addClass('date_created').text(tweetData.created_at))
  return $tweet
 }
-
  
-
-    
-
 $(document).ready(function() {
-    console.log("Document is ready");
-    for(tweet of tweets) {
-   $(`.tweets`).append(createTweetElement(tweet))
-    }
+ console.log("Document is ready");
+// renderTweets(tweets)
+
+$("#submit_tweet").on("submit",(function(event) {
+    event.preventDefault();
+    console.log("Default event prevented")
+    $.ajax({
+            url:'/tweets',
+            method:'POST',
+            data: $(this).serialize(), 
+            success: () => console.log("Success!")   
+          });
+}));
+renderTweets(tweets)
 });
-    
 
 
-          
+
+
