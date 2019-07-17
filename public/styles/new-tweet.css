@@ -1,15 +1,15 @@
 .new-tweet {
      display: block; 
     position: relative;
-    width:85%;
+    width:90%;
      box-sizing: content-box;
     padding: 2rem;
-    border-radius: 7px;
-    border-color: transparent;
+    /* border-radius: 7px; */
+    border-color: black;
     border-style: none;
-    box-shadow: 2px 4px 10px #AAA;
-    background-color: #eee;
-    margin: 0 0.5em;
+    /* box-shadow: 2px 4px 10px #AAA; */
+    background-color:inherit;
+    /* margin: 0 0.5em; */
     
     
 }
@@ -21,12 +21,23 @@
 .new-tweet textarea { 
     resize:none; 
     position: relative;
-    width: 85%;
-    height: 3.7rem;
-     box-sizing: content-box;   
+    width: 90%;
+    height: 1.5em;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    /* border-bottom-style:  */
+    background-color: inherit;
+    box-sizing: content-box;   
     padding-right: none;
     padding-left: none;
-    color: #393A3C;
+    color: black;
+}
+.new-tweet textarea ::placeholder {
+    opacity: none;
+    color: rgb(1, 3, 6);
+    font-family:'bungee', cursive;
+    font-style: bold;
+    font-weight: 400;
 }
 
 .new-tweet .counter {
@@ -47,7 +58,7 @@
     color: red;
 }
 
-.flexNew {
+/* .flexNew {
     display: flex;
     justify-content: space-between;
-}
+} */

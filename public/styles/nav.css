@@ -13,13 +13,50 @@ nav {
     padding-right: 1.5em;
     display: flex;
     justify-content: space-between;
+
     
-    }
+}
+
 #newTweet {
+    display: block;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
 
 
+}
+@keyframes bounce {
+    from {
+      margin-top: 0rem;
+      color:yellow; 
+      
+    }
+  
+    to {
+      margin-top: 0.5rem;
+      color: black;
+     
+    }
+  }
+#arrow {
+    display: block;
+    text-align: center;
+    transition: 0.1s;
+
+    
+}
+
+#arrow :hover {
+    animation: alternate;
+    
+    animation-name: bounce;
+    animation-duration: 0.3s;
+    animation-iteration-count: 100;
+    
+}
+#arrow-btn {
+ background-color: #4056A1;
+ border-color: #4056A1;
+ 
 }
 
 #user_id {
@@ -27,5 +64,4 @@ nav {
     font-size: 24px;
     font-style: bold;
     color: #41396A;
-
 }

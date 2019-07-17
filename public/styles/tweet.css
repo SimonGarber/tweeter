@@ -1,16 +1,18 @@
+
 .tweet {
     position: relative;
     width: 90%;
     padding: 1rem;
-    border-color: transparent;
-    border-radius: 7px;
-    background-color: #EEE;
+    border-color: black;
+    border-style:solid;
+    background-color:inherit;
     box-sizing: content-box;
-    box-shadow: 2px 4px 10px #AAA;
     margin-top: 1em;
     margin-left: 1rem;
     margin-right: 6rem;
+      
 }
+
 
 .tweet h3 {
     display: inline-block;
@@ -23,9 +25,13 @@
 }
 
 .tweet p {
-    height: 5rem;
-    background-color:#FFFFFF;
+    height: 7rem;
+    background-color: inherit;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+
 }
+
 .tweet h4 {
     margin-top: 0;
     float: right;
@@ -34,3 +40,11 @@
  height: 4rem;
  width: 4rem;
 }
+
+article.tweet:hover {
+    border-color: rgb(185, 211, 211);
+    box-shadow: 5px 10px #888888;
+    border-radius: 7px;
+}
+
+    

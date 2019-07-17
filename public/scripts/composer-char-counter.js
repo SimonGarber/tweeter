@@ -7,7 +7,13 @@ $(document).ready(function() {
                $(".counter").addClass("redcounter")
            } else {
                $(".counter").removeClass("redcounter")
-           }     
-		});
+           }      
+        });
+    $("textarea").on('submit',function(e) {
+        if(e.target.value.length === 0){
+            event.preventDefault()
+            console.log("You must write something in order to tweet!")
+        }
+    })
     });
     
