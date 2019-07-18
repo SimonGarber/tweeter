@@ -7,7 +7,7 @@ const createTweetElement = function(tweet) {
     $tweet.append($('<h3>').text(tweet.user.name))
     $tweet.append($('<p>').text( tweet.content.text))
 
-    $tweet.append($('<div>').addClass('date_created').text(tweet.created_at))
+    $tweet.append($('<div>').addClass('date_created').text(jQuery.timeago(new Date(tweet.created_at))))
     $tweet.find('.date_created').append($('<span id="icons"><i class="fas fa-retweet"></i><i class="fas fa-flag"></i><i class="fas fa-heart"></i></span>'));
     return $tweet
   }
@@ -30,6 +30,7 @@ function loadTweets() {
 }
     
 $(document).ready(function() {
+  jQuery("time.timeago").timeago();
   console.log("Document is ready");
     $('#arrow-btn').click(function() {
     $('.new-tweet').slideToggle();
