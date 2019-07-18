@@ -1,12 +1,16 @@
 header {
     position: relative;
+    width: 40%;
+    max-width: 500px;
     height: 400px;
-    width: 100%;
-    top: 120px;
+    top: 160px;
     background-color: #8fd9d5;
     background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+    margin-left: 4em;
 
 }
+
+
 #avatar {
     display: block;
     margin: auto;

@@ -26,9 +26,10 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 main.container {
+  float: right;
   position: relative;
   top: 140px;
-  width:90%;
+  width:50%;
   margin:auto;
   padding-left: 3em;
   

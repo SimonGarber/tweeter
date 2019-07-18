@@ -224,6 +224,7 @@
   
     function distance(date) {
       return (new Date().getTime() - date.getTime());
+      
     }
   
     // fix for IE6 suckage

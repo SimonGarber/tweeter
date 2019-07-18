@@ -1,57 +1,38 @@
 .new-tweet {
-     display: block; 
+    display: block; 
     position: relative;
     width:90%;
-     box-sizing: content-box;
+    box-sizing: content-box;
     padding: 2rem;
-    /* border-radius: 7px; */
     border-color: black;
     border-style: none;
-    /* box-shadow: 2px 4px 10px #AAA; */
     background-color:inherit;
-    /* margin: 0 0.5em; */
-    
-    
 }
 .new-tweet h2 {
     border-bottom: 1px solid black;
     margin-top: 0;
 }
-
-/* .new-tweet textarea {  */
-    /* resize:none; 
-    position: relative;
-    width: 90%;
+    
+.new-tweet textarea {
+   
     height: 1.5em;
     border-bottom-style: solid;
     border-bottom-color: black;
-    /* border-bottom-style:  */
-    /* background-color: inherit;
-    box-sizing: content-box;   
-    padding-right: none;
-    padding-left: none;
-    color: black; */
-    .new-tweet textarea {
-       
-        height: 1.5em;
-        border-bottom-style: solid;
-        border-bottom-color: black;
-        overflow: auto;
-        outline: none;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
-        resize: none; 
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none; 
 }
-
- .new-tweet textarea ::placeholder {
-    opacity: 1;
-    color: rgb(1, 3, 6);
-    font-family:'bungee', cursive;
-    font-style: bold;
-    font-weight: 400;
+    
+.new-tweet textarea ::placeholder {
+   opacity: 1;
+   color: rgb(1, 3, 6);
+   font-family:'bungee', cursive;
+   font-style: bold;
+   font-weight: 400;
 } 
-
 .new-tweet .counter {
     float: right;
     font-family: 'Bungee', cursive;
@@ -66,13 +47,16 @@
     margin-top: 1em;
    
 }
- .new-tweet .redcounter {
-    color: red;
+    
+.new-tweet .redcounter {
+   color: red;
 }
-
 #error {
     display:none;
     font-family: 'Bungee', cursive;
     color: red;
     
 }
+
+
+
