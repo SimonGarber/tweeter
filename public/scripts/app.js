@@ -27,6 +27,7 @@ The createTweetElement function is called for each tweet to be rendered*/
    } 
 }
 /******************************************************************************************************************************************************************/
+/*The loadTweets function is defined here: It is an ajax GET request and takes the tweets as a JSON object and places them in the body of the response*/
 function loadTweets() {   
   $.ajax({
     url:'/tweets',
@@ -38,7 +39,10 @@ function loadTweets() {
   });  
 }
 /*************************************************************************************************************/
-/*The DOM is loaded here: */    
+/*The DOM is loaded here: Form validation is processed here when the submit button is pressed. Error handling is done 
+in the form of Jquery messages rendered as html above the form. The ajax POST request is performed and loadTweets is called
+after the success message is received */    
+/***************************************************************************************************************/
 $(document).ready(function() {
   $("time.timeago").timeago();
   console.log("Document is ready");
@@ -73,7 +77,7 @@ if (charCount === 0){
     }));
     loadTweets();        
   });
-  
+/*************************************************************************************************************************************/  
   
 
       

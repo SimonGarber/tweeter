@@ -1,3 +1,6 @@
+/*****************************************************************************/
+/*Jquery event handling for displaying the character counter on Tweet compose form*/
+/****************************************************************************/
 $(document).ready(function() {
     $("textarea").on('input', function(e)
 		{
@@ -16,4 +19,4 @@ $(document).ready(function() {
         }
     })
     });
-    
+/*********************************************************************************/    
