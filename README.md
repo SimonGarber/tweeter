@@ -15,3 +15,11 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Plug-ins 
+-timeago v.1.6.7 (Jquery plugin for handling date and time stamping for tweets)
+
+## Screenshots
+
+![Tweeter Screenshot 1](https://github.com/SimonGarber/tweeter/blob/master/screen_shot_1.png)
+![Tweeter Screenshot 2](https://github.com/SimonGarber/tweeter/blob/master/screen_shot_2.png)
